@@ -1,0 +1,83 @@
+/* General */
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    /* font-family: 'Roboto Mono', monospace; */
+    background-color: lightgray;
+}
+
+/* Main */
+.main{
+    max-width: 980px;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px black;
+    min-height: 50vh;
+}
+
+/* Header */
+.header{
+    padding: 5rem;
+    background-color: black;
+    background-image: url('../img/img-music.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.search{
+    flex-grow: 1;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Content */
+.content{
+    padding-top: 2rem;
+}
+
+.songs{
+    padding: 0;
+    list-style-type: none;
+}
+
+.song{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.song:hover{
+    background-color: lightgray;
+}
+
+.show{
+    background-color: goldenrod;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit{
+    cursor: pointer;
+    font-weight: bold;
+}
